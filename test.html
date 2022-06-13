@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba</title>
+</head>
+<body>
+    <div class="modalEncuesta porContestar">
+        <header>
+            <div class="logo">
+                <a href="/" title="Ir a Buscalibre.com">
+                    <img src="https://statics.cdn0.buscalibre.com/images/encuesta/20160616/iso.png" title="Ir a Buscalibre.com" alt="Ir a Buscalibre.com">
+                </a>
+            </div>
+            <p class="hola">
+                Hola <span>Andrey Zapata</span>,<br> nos gustaría saber cómo fue tu experiencia de compra en Buscalibre.com para el pedido <span>32490215</span>
+            </p>
+            <p class="marcaRespuesta">Marca tu respuesta <strong>1</strong> al <strong>5</strong> (considerando <strong>5</strong> como <strong>muy bueno</strong> y <strong>1</strong> como <strong>muy malo</strong>)</p>
+        </header>
+        <section>
+            <form id="formEncuesta" method="post" action="/pedido/postventa/registrar">
+                <input type="hidden" name="c_pedido" value="32490215">
+                <div>
+                    <p><span class="triangulo"></span>¿Qué te pareció la navegación del sitio?</p>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                    <div class="seleccion">
+                        <input type="radio" name="p1" id="p11" value="1" required="required"><label for="p11">1</label>
+                        <input type="radio" name="p1" id="p12" value="2" required="required"><label for="p12">2</label>
+                        <input type="radio" name="p1" id="p13" value="3" required="required"><label for="p13">3</label>
+                        <input type="radio" name="p1" id="p14" value="4" required="required"><label for="p14">4</label>
+                        <input type="radio" name="p1" id="p15" value="5" required="required"><label for="p15">5</label>
+                    </div>
+                </div>
+                <div>
+                    <p><span class="triangulo"></span>¿Qué te pareció la variedad de productos disponibles en el sitio?</p>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                    <div class="seleccion">
+                        <input type="radio" name="p2" id="p21" value="1" required="required"><label for="p21">1</label>
+                        <input type="radio" name="p2" id="p22" value="2" required="required"><label for="p22">2</label>
+                        <input type="radio" name="p2" id="p23" value="3" required="required"><label for="p23">3</label>
+                        <input type="radio" name="p2" id="p24" value="4" required="required"><label for="p24">4</label>
+                        <input type="radio" name="p2" id="p25" value="5" required="required"><label for="p25">5</label>
+                    </div>
+                </div>
+                <div>
+                    <p><span class="triangulo"></span>¿Qué te parecieron los precios de los productos?</p>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                    <div class="seleccion">
+                        <input type="radio" name="p3" id="p31" value="1" required="required"><label for="p31">1</label>
+                        <input type="radio" name="p3" id="p32" value="2" required="required"><label for="p32">2</label>
+                        <input type="radio" name="p3" id="p33" value="3" required="required"><label for="p33">3</label>
+                        <input type="radio" name="p3" id="p34" value="4" required="required"><label for="p34">4</label>
+                        <input type="radio" name="p3" id="p35" value="5" required="required"><label for="p35">5</label>
+                    </div>
+                </div>
+                <div>
+                    <p><span class="triangulo"></span>En una escala de 0 a 10, ¿qué tan probable es que recomiendes Buscalibre.com a un amigo?, siendo 10 muy probable</p>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                    <div class="seleccion">
+                        <input type="radio" name="p6" id="p61" value="1" required="required"><label for="p61">1</label>
+                        <input type="radio" name="p6" id="p62" value="2" required="required"><label for="p62">2</label>
+                        <input type="radio" name="p6" id="p63" value="3" required="required"><label for="p63">3</label>
+                        <input type="radio" name="p6" id="p64" value="4" required="required"><label for="p64">4</label>
+                        <input type="radio" name="p6" id="p65" value="5" required="required"><label for="p65">5</label>
+                        <input type="radio" name="p6" id="p66" value="6" required="required"><label for="p66">6</label>
+                        <input type="radio" name="p6" id="p67" value="7" required="required"><label for="p67">7</label>
+                        <input type="radio" name="p6" id="p68" value="8" required="required"><label for="p68">8</label>
+                        <input type="radio" name="p6" id="p69" value="9" required="required"><label for="p69">9</label>
+                        <input type="radio" name="p6" id="p610" value="10" required="required"><label for="p610">10</label>
+                    </div>
+                </div>
+                <div>
+                    <p><span class="triangulo"></span>¿Recibiste tu pedido dentro del plazo indicado?</p>
+                    <ul>
+                        <li>Si</li>
+                        <li>No</li>
+                    </ul>
+                    <div class="seleccion">
+                        <input type="radio" name="p4" id="p41" value="1" required="required"><label for="p41">Si</label>
+                        <input type="radio" name="p4" id="p42" value="0" required="required"><label for="p42">No</label>
+                    </div>
+                </div>
+                <div>
+                    <p><span class="triangulo"></span>Autorizo a buscalibre a publicar mi comentario en la siguiente página.</p>
+                    <ul>
+                        <li>Si</li>
+                        <li>No</li>
+                    </ul>
+                    <div class="seleccion">
+                        <input type="radio" name="p5" id="p51" value="1" required="required"><label for="p51">Si</label>
+                        <input type="radio" name="p5" id="p52" value="0" required="required"><label for="p52">No</label>
+                    </div>
+                </div>
+                <div>
+                    <p><span class="triangulo"></span>Déjanos tu comentario</p>
+                    <textarea id="comentario" name="opinion" rows="4" cols="36" value="" placeholder="Comentario ..."></textarea>
+                </div>
+                <button class="eenviar">Enviar</button>
+    
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>
