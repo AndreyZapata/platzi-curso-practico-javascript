@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <div id="main_container">
+        <form id="form_sourvey">
+            <section id="header">
+                <div id="logo">
+                    <a href="https://grupoexcala.com/" title="Ir a excala.com">
+                        <img class="logo__excala" src="./images/excala.png" title="Ir a excala.com" alt="Ir a excala.com">
+                    </a>
+                </div>
+
+                <div id="question">
+                    <p class="p_question">
+                        ¿En una escala de 0 a 9, que tanto recomendaria a <span>Grupo Excala</span>
+                        a un amigo o colega?
+                    </p>
+
+                </div>
+            </section>
+
+            <section id="rating">
+
+                <div id="rating_annotation">
+                    <p id="left_p">
+                        No me gusta para nada
+                    </p>
+
+                    <p id="right_p">
+                        Me gusta mucho
+                    </p>
+
+                </div>
+
+                <div id="squares">
+
+                    <input type="radio" name="square" id="square0" value=0>
+                    <label for="square0">0</label>
+
+                    <input type="radio" name="square" id="square1" value=1>
+                    <label for="square1">1</label>
+
+                    <input type="radio" name="square" id="square2" value=2>
+                    <label for="square2">2</label>
+
+                    <input type="radio" name="square" id="square3" value=3>
+                    <label for="square3">3</label>
+
+                    <input type="radio" name="square" id="square4" value=4>
+                    <label for="square4">4</label>
+
+                    <input type="radio" name="square" id="square5" value=5>
+                    <label for="square5">5</label>
+
+                    <input type="radio" name="square" id="square6" value=6>
+                    <label for="square6">6</label>
+
+                    <input type="radio" name="square" id="square7" value=7>
+                    <label for="square7">7</label>
+
+                    <input type="radio" name="square" id="square8" value=8>
+                    <label for="square8">8</label>
+
+                    <input type="radio" name="square" id="square9" value=9>
+                    <label for="square9">9</label>
+
+                </div>
+
+                <div id="rating_values">
+                    <h4 id="rating_header">
+                        Excellent
+                    </h4>
+
+                    <p id="rating_comment">
+                        Dejanos saber el porque de tu calificación
+                    </p>
+
+                </div>
+
+                <!-- TODO etiquetas rapidas -->
+
+            </section>
+
+            <section id="form-comments">
+                <textarea id="comentario" name="opinion" rows="6" cols="36" value="" placeholder="Por favor describe el problema, para que podamos mejorarlo para la proxima..."></textarea>
+            </section>
+
+            <div class="primary-btn">
+                <button class="send" type="submit" id="submit-button">Enviar</button>
+            </div>
+
+            
+
+        </form>
+
+        <script src="./NPS.js"></script>
+    </div>
+</body>
+</html>
