@@ -1,4 +1,4 @@
-function showValue(event)
+function showRatingScore(event)
 {
     event.preventDefault();
     const checked_square = document.querySelector('input[name = "square"]:checked').value;
@@ -7,11 +7,34 @@ function showValue(event)
 }
 
 const submitButton = document.getElementById("submit-button");
-submitButton.addEventListener("click", showValue);
+submitButton.addEventListener("click", showRatingScore);
 
+const detractorQuickEntries = [
+    "some text",
+    "Mal servicio",
+    "No cumple con lo prometido",
+    "example",
+    "another text",
+    "another one",
+    "lorem",
+    "test text",
+];
 
-// if(checked_square != null){  //Test if something was checked
-// alert(checked_square.value); //Alert the value of the checked.
-// } else {
-// alert('Nothing checked'); //Alert, nothing was checked.
-// }
+function insertQuickEntries(event) {
+    let cards = document.getElementById("cards");
+    let textHTML;
+    
+    for (let i=0; i < detractorQuickEntries.length; i++ ) {
+        textHTML += '<input type="checkbox" id="card'+i+'" name="card'+i+'" value="'+detractorQuickEntries[i]+'"> <label class="cards" for="card'+i+'">'+detractorQuickEntries[i]+'</label>';
+        cards.insertAdjacentHTML('afterend', 
+        '<input type="checkbox" id="card'+i+'" name="card'+i+'" value="'+detractorQuickEntries[i]+'"> <label for="card'+i+'">'+detractorQuickEntries[i]+'</label>');
+    }
+
+    cards.innerHTML = textHTML;
+    console.log(textHTML);
+
+}
+
+const optionSquares = document.getElementById("squares");
+
+optionSquares.addEventListener("click", insertQuickEntries);
